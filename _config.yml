@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+rouge:         	  true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            TIFE
+tagline:          'dot org'
+description:      'Hi, I’m <a href="http://tife.org/scripts/stef.txt" target="_blank">Stef</a>. I like information freedom, the right to privacy, cryptography, free software, computer security, and an Internet that respects humans. '
+url:              http://hyde.getpoole.com
+baseurl:          /
+
+author:
+  name:           'Stef Van Dessel'
+  url:            https://twitter.com/indig057
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
