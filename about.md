@@ -4,7 +4,7 @@ title: About
 ---
 
 
-I’m currently managing partner at [Out of the box](http://out-ofthebox.be) and I'm working as an independent technology consultant (views here do not speak for employer, etc.). In the past, I’ve been a technical consultant at Centric.be, a security consultant, and various species of engineer.
+I’m currently managing partner at [Out of the box](http://out-ofthebox.be) center for research, child- and youth guidance and I'm working as an independent technology consultant (views here do not speak for employer, etc.). In the past, I’ve been a technical consultant at Centric.be, a security consultant, and various species of engineer.
 
 
 There are currently two themes built on Poole:
