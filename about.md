@@ -4,7 +4,7 @@ title: About
 ---
 
 
-I’m currently managing partner at [Out of the box](http://out-ofthebox.be) center for research, child- and youth guidance and I'm working as an independent technology consultant (views here do not speak for employer, etc.). In the past, I’ve been a technical consultant at Centric.be, a security consultant, and various species of engineer.
+I’m currently working as managing partner at [Out of the box:](http://out-ofthebox.be) Center for research, child- and youth guidance and as an independent technology consultant on various projects. In the past, I’ve been a technical consultant at Centric.be, a security consultant, and various species of engineer.
 
 
 There are currently two themes built on Poole:
@@ -12,17 +12,8 @@ There are currently two themes built on Poole:
 * [Hyde](http://hyde.getpoole.com)
 * [Lanyon](http://lanyon.getpoole.com)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
 
-## Setup
 
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+You can also find me on [Twitter] (https://twitter.com/#indig057), though I prefer end-to-end encrypted email for most purposes [contact info] (http://tife.org/scripts/stef.txt).
 
 Thanks for reading!
