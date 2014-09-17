@@ -4,7 +4,7 @@
  <title>TIFE</title>
  <link href="http://hyde.getpoole.com/atom.xml" rel="self"/>
  <link href="http://hyde.getpoole.com/"/>
- <updated>2014-09-17T18:00:32+02:00</updated>
+ <updated>2014-09-17T18:27:36+02:00</updated>
  <id>http://hyde.getpoole.com</id>
  <author>
    <name>Stef Van Dessel</name>
@@ -13,46 +13,80 @@
 
  
  <entry>
-   <title>Introducing Hyde</title>
-   <link href="http://hyde.getpoole.com/2013/12/28/introducing-hyde/"/>
-   <updated>2013-12-28T00:00:00+01:00</updated>
-   <id>http://hyde.getpoole.com/2013/12/28/introducing-hyde</id>
-   <content type="html">&lt;p&gt;Hyde is a brazen two-column &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that pairs a prominent sidebar with uncomplicated content. It&amp;#39;s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
+   <title>Tor Vs I2p</title>
+   <link href="http://hyde.getpoole.com/2014/09/17/tor-vs-I2P/"/>
+   <updated>2014-09-17T00:00:00+02:00</updated>
+   <id>http://hyde.getpoole.com/2014/09/17/tor-vs-I2P</id>
+   <content type="html">&lt;p&gt;Tor and I2P are both anonymizing networks, allowing people to tunnel out of their open and non-secure environments. However, they achieve this in slightly different ways.&lt;/p&gt;
 
-&lt;h3&gt;Built on Poole&lt;/h3&gt;
+&lt;p&gt;As a quick recap, onion routing involves wrapping your packets in multiple layers of encryption, in a system where each router that passes it along only has the key to decrypt its layer and none of the others. This way, each router can only see the router that sent it the packets and the router it in turn must send the packets to. It’s how this is performed that draws its contrasts. Let’s take a look at each in more detail.&lt;/p&gt;
 
-&lt;p&gt;Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt;. Poole, and every theme built on it (like Hyde here) includes the following:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tor&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor has been around quite a while longer then I2P. As a result, it has been studied much more in depth by both the white hat and black hat communities. In my Tor article, I mentioned it was better designed as an out-proxy than I2P is. This is because there are many more exit nodes on the Tor network then on I2P, and with the ability to use TLS and bridges, Tor also performs better at evading state-level firewalls (think China and Iran).&lt;/p&gt;
+
+&lt;p&gt;The only reason anyone would be changing the I2P config would be to set up port forwarding, and that’s a bit out of this article’s scope (though a great idea for a future one). Tor is a simple SOCKS proxy, so your only choice is to be a relay, exit node, or client node. Tor also has advantages in that it holds a large number of talented developers, some of them are even funded. In fact, Tor receives a good amount of money for its maintenance and development, and this shows in the form of its excellent documentation and white papers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://roon-media.s3.amazonaws.com/blogs/12676/3l440p3R0M3O0u1n2F3j1K1v3w0f1x0y/giant.jpg&quot; alt=&quot;tor-vs-i2p-great-onion-debate,w654&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;On that note, Tor is written in C, as opposed to I2P’s Java. This means that the Tor client typically runs faster and with a smaller memory footprint.&lt;/p&gt;
+
+&lt;p&gt;Tor takes the directory-based approach, providing a centralized point to manage the overall ‘view’ of the network, as well as gather and report statistics, as opposed to I2P’s distributed network model. This centralization reduces complexity at each node and can efficiently address Sybil attacks.&lt;/p&gt;
+
+&lt;p&gt;=&amp;gt; Sybil attacks &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Sybil_attack&quot;&gt;https://en.wikipedia.org/wiki/Sybil_attack&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I2P&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I2P was designed with the internal network in mind. Steps have been taken to provide a better environment for hosting services rather then providing out-proxies. This is the fundamental difference between I2P and the Tor network. I2P was designed and optimized for hidden services, which are much faster than in Tor, as the network is fully distributed and self-organizing. Helping this is the fact that peers are selected by continuously profiling and ranking performance, rather than trusting claimed capacity.&lt;/p&gt;
+
+&lt;p&gt;I2P is packet switched, instead of circuit switched, like the Tor network. This means transparent load balancing of messages across multiple peers, rather than a single path. Essentially, all peers participate in routing for others. Also along these lines, I2P’s API was created for anonymity, unlike SOCKS, which is designed for functionality. As Tor uses SOCKS, I2P tends to fare better for security than Tor, but keep in mind most people will not have a threat model where this would be of concern, as attacks tend to be highly complex.&lt;/p&gt;
+
+&lt;p&gt;Lastly, tunnels in I2P are short lived, decreasing the number of samples that an attacker can use to mount an active attack with, unlike circuits in Tor, which are typically long lived.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://roon-media.s3.amazonaws.com/blogs/12676/0b3x2j2v0Q131L262U0f1Q09102m3p2s/giant.jpg&quot; alt=&quot;tor-vs-i2p-great-onion-debate,w654&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What Is Best for Me?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s a very open ended question. At times, it falls to a technical choice, an example being P2P file sharing over I2P, where as Tor does not support (nor encourage) it. Other times it depends on your personal choices. You will find the content on the Tor and I2P networks to vary. It is not to say you should not host services on Tor, or should not out-proxy with I2P, but the networks are designed with different strengths in mind.&lt;/p&gt;
+
+&lt;p&gt;Perhaps the answer to the question is what I do. I use both.&lt;/p&gt;
+
+&lt;p&gt;Generally, if you are looking for a robust SOCKS out-proxy, Tor is a great choice. Granted a number of exit nodes have been blacklisted to prevent abuse, the network still has plenty more.&lt;/p&gt;
+
+&lt;p&gt;If you want to host hidden services, then I2P would be your better choice, as you are afforded the added protection of decentralization and higher speeds to go along with it.
+Shortfalls&lt;/p&gt;
+
+&lt;p&gt;Using these tools, you are only as anonymous as you allow yourself to be. Doing things like logging into your personal Facebook account or checking your personal email while using these networks will remove a good chuck of what is protecting you and keeping you safe. It’s wise to keep a few guidelines in mind:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Think of your ‘clear’ net identity and your darknet identity as two separate things. Do not mix the two.&lt;/p&gt;
+
+&lt;p&gt;Avoid using any personal information or distinguishing remarks on the network—remember to be someone else. Don’t leave clues as to who you really are.&lt;/p&gt;
+
+&lt;p&gt;You should never use your normal browser to view resources through the networks, only use the bundled browsers, or manually turn off those services. Flash and Java are especially good at betraying your location and IP address to servers. Turn them both off. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;=&amp;gt; link to original article &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;http://null-byte.wonderhowto.com/inspiration/tor-vs-i2p-great-onion-debate-0133642/&quot;&gt;http://null-byte.wonderhowto.com/inspiration/tor-vs-i2p-great-onion-debate-0133642/&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Remailers by Tom Ritter</title>
+   <link href="http://hyde.getpoole.com/2014/09/17/remailers/"/>
+   <updated>2014-09-17T00:00:00+02:00</updated>
+   <id>http://hyde.getpoole.com/2014/09/17/remailers</id>
+   <content type="html">&lt;p&gt;This blog series is intended to be a course on how remailers work, the theory behind them, and many of the choices that must be considered. Some of the topics we intended to dive deeply into in the future is how to have a directory of remailer nodes, how to handle messages that overflow the packet size, more details on Mixminion, as-yet-unimplemented Academic Papers (like Pynchon Gate and Sphinx), and more!&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Mobile friendly design and development&lt;/li&gt;
-&lt;li&gt;Easily scalable text and component sizing with &lt;code&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
-&lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
-&lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
-&lt;li&gt;Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://crypto.is/blog/what_is_a_remailer&quot;&gt;1. What is a remailer?&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://crypto.is/blog/remailers_weve_got&quot;&gt;2. Remailers we’ve got&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://crypto.is/blog/tagging_attacks&quot;&gt;3. Tagging attacks&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://crypto.is/blog/packet_formats_1&quot;&gt;4. Packet formats 1 of 3&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://crypto.is/blog/tagging_attack_on_mixmaster&quot;&gt;5. A tagging attack on mixmaster&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://crypto.is/blog/mix_and_onion_networks&quot;&gt;6. The differences between Onion Routing and Mix networks&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;Hyde features&lt;/h3&gt;
-
-&lt;p&gt;In addition to the features of Poole, Hyde adds the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sidebar includes support for textual modules and a dynamically generated navigation with active link support&lt;/li&gt;
-&lt;li&gt;Two orientations for content and sidebar, default (left sidebar) and &lt;a href=&quot;https://github.com/poole/lanyon#reverse-layout&quot;&gt;reverse&lt;/a&gt; (right sidebar), available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/poole/hyde#themes&quot;&gt;Eight optional color schemes&lt;/a&gt;, available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/poole/hyde#readme&quot;&gt;Head to the readme&lt;/a&gt; to learn more.&lt;/p&gt;
-
-&lt;h3&gt;Browser support&lt;/h3&gt;
-
-&lt;p&gt;Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.&lt;/p&gt;
-
-&lt;h3&gt;Download&lt;/h3&gt;
-
-&lt;p&gt;Hyde is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
-
-&lt;p&gt;Thanks!&lt;/p&gt;
+&lt;p&gt;Source: =&amp;gt; &lt;strong&gt;&lt;a href=&quot;https://crypto.is/blog/&quot;&gt;https://crypto.is/blog/&lt;/a&gt;&lt;/strong&gt;  &lt;/p&gt;
 </content>
  </entry>
  
