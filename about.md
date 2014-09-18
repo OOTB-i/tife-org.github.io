@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-
+![Image description](/public/images/stef.jpg)
 I’m currently working as managing partner at [Out of the box:](http://out-ofthebox.be) Center for research, child- and youth guidance and as an independent technology consultant on various projects. In the past, I’ve been a technical consultant at Centric.be, a security consultant, and various species of engineer.
 
 
