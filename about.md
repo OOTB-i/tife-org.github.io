@@ -8,7 +8,7 @@ I’m currently working as managing partner at [Out of the box:](http://out-ofth
 
 
 
-You can also find me on [Twitter](https://twitter.com/indig057), though I prefer end-to-end encrypted email for most purposes [contact info](http://tife.org/scripts/stef.txt).
+You can find me on [Twitter](https://twitter.com/indig057), though I prefer end-to-end encrypted email for most purposes [contact info](http://tife.org/scripts/stef.txt).
 
 Thanks for reading!
 
