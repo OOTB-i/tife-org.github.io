@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>TIFE</title>
- <link href="http://hyde.getpoole.com/atom.xml" rel="self"/>
- <link href="http://hyde.getpoole.com/"/>
- <updated>2014-09-18T17:16:02+02:00</updated>
- <id>http://hyde.getpoole.com</id>
+ <link href="http://stef.tife.org/atom.xml" rel="self"/>
+ <link href="http://stef.tife.org/"/>
+ <updated>2014-09-18T21:11:27+02:00</updated>
+ <id>http://stef.tife.org</id>
  <author>
    <name>Stef Van Dessel</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Tor vs I2P - The great onion debate by Ellen Freeman</title>
-   <link href="http://hyde.getpoole.com/2014/09/17/tor-vs-I2P/"/>
+   <link href="http://stef.tife.org/2014/09/17/tor-vs-I2P/"/>
    <updated>2014-09-17T00:00:00+02:00</updated>
-   <id>http://hyde.getpoole.com/2014/09/17/tor-vs-I2P</id>
+   <id>http://stef.tife.org/2014/09/17/tor-vs-I2P</id>
    <content type="html">&lt;p&gt;Tor and I2P are both anonymizing networks, allowing people to tunnel out of their open and non-secure environments. However, they achieve this in slightly different ways.&lt;/p&gt;
 
 &lt;p&gt;As a quick recap, onion routing involves wrapping your packets in multiple layers of encryption, in a system where each router that passes it along only has the key to decrypt its layer and none of the others. This way, each router can only see the router that sent it the packets and the router it in turn must send the packets to. It’s how this is performed that draws its contrasts. Let’s take a look at each in more detail.&lt;/p&gt;
@@ -72,9 +72,9 @@ Shortfalls&lt;/p&gt;
  
  <entry>
    <title>Remailers by Tom Ritter</title>
-   <link href="http://hyde.getpoole.com/2014/09/17/remailers/"/>
+   <link href="http://stef.tife.org/2014/09/17/remailers/"/>
    <updated>2014-09-17T00:00:00+02:00</updated>
-   <id>http://hyde.getpoole.com/2014/09/17/remailers</id>
+   <id>http://stef.tife.org/2014/09/17/remailers</id>
    <content type="html">&lt;p&gt;This blog series is intended to be a course on how remailers work, the theory behind them, and many of the choices that must be considered. Some of the topics we intended to dive deeply into in the future is how to have a directory of remailer nodes, how to handle messages that overflow the packet size, more details on Mixminion, as-yet-unimplemented Academic Papers (like Pynchon Gate and Sphinx), and more!&lt;/p&gt;
 
 &lt;ul&gt;
@@ -92,9 +92,9 @@ Shortfalls&lt;/p&gt;
  
  <entry>
    <title>Example content</title>
-   <link href="http://hyde.getpoole.com/2012/02/07/example-content/"/>
+   <link href="http://stef.tife.org/2012/02/07/example-content/"/>
    <updated>2012-02-07T00:00:00+01:00</updated>
-   <id>http://hyde.getpoole.com/2012/02/07/example-content</id>
+   <id>http://stef.tife.org/2012/02/07/example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
@@ -238,9 +238,9 @@ Shortfalls&lt;/p&gt;
  
  <entry>
    <title>What's Jekyll?</title>
-   <link href="http://hyde.getpoole.com/2012/02/06/whats-jekyll/"/>
+   <link href="http://stef.tife.org/2012/02/06/whats-jekyll/"/>
    <updated>2012-02-06T00:00:00+01:00</updated>
-   <id>http://hyde.getpoole.com/2012/02/06/whats-jekyll</id>
+   <id>http://stef.tife.org/2012/02/06/whats-jekyll</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project&amp;#39;s readme&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
