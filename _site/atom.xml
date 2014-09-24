@@ -4,13 +4,36 @@
  <title>TIFE</title>
  <link href="http://stef.tife.org/atom.xml" rel="self"/>
  <link href="http://stef.tife.org/"/>
- <updated>2014-09-18T21:27:54+02:00</updated>
+ <updated>2014-09-24T15:06:18+02:00</updated>
  <id>http://stef.tife.org</id>
  <author>
    <name>Stef Van Dessel</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Startpage and Ixquick - Search in Privacy</title>
+   <link href="http://stef.tife.org/2014/09/24/startpage-and-ixquick--search-in-privacy/"/>
+   <updated>2014-09-24T00:00:00+02:00</updated>
+   <id>http://stef.tife.org/2014/09/24/startpage-and-ixquick--search-in-privacy</id>
+   <content type="html">&lt;p&gt;&lt;strong&gt;What is Startpage/Ixquick?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Startpage.com and Ixquick are a search engine (sometimes referred to as a meta-search engine as they utilise other search engines to deliver results) with privacy at the core of everything they do (privacy by design). They have spent a number of years and significant resources developing their service to be what I consider the most privacy friendly search that exists on the Internet today.&lt;/p&gt;
+
+&lt;p&gt;Ixquick.com is the original meta-search engine, using up to 10 different underlying search engines to retrieve results from that then get filtered, organized and prioritized or ranked according to the underlying algorithms.&lt;/p&gt;
+
+&lt;p&gt;Both Startpage.com and Ixquick.com are run by the same company, the primary difference between the two is Startpage.com&amp;#39;s search results come directly from Google’s syndicated search. For the purpose of this review I will be talking about Startpage.com although the review should be valid for both services equally.&lt;/p&gt;
+
+&lt;p&gt;What makes Startpage.com so special? Well everything really, but let me try to break it down into specific points.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Logs&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Startpage.com don’t log anything – that is, no IP address, nothing to tell them who you are, where have come from or where you went to. They don’t care, they are not interested in profiling you or harvesting vast amounts of data about your searches, all they care about is delivering results to you in the most privacy focused way possible.&lt;/p&gt;
+
+&lt;p&gt;=&amp;gt; read more on &lt;strong&gt;&lt;a href=&quot;http://www.alexanderhanff.com/startpage-and-ixquick-search-in-privacy&quot;&gt;http://www.alexanderhanff.com/startpage-and-ixquick-search-in-privacy&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Tor vs I2P - The great onion debate by Ellen Freeman</title>
